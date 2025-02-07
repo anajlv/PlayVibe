@@ -1,0 +1,14 @@
+:root{
+   --font-dm-sans: "DM Sans", sans-serif;
+   --color-background: #121212;
+   --color-text-general: #FFF;
+   --color-text-secundary: #b3b3b3;
+   --color-text-footer: #000;
+   --color-button-background: #FFF;
+   --color-button-text: #000;
+   --color-buttonsecudundary-text: #a7a7a7;
+   --color-buttonsecundary-border: #878787;
+   --color-buttonsecundary-background: transparent;
+   --bg-icon: #131313;
+   --bg-color-icon: rgba(0,0,07)
+}

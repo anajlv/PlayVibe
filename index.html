@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayVibe</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/barraLateral-rodapé.css">
+    <link rel="stylesheet" href="./src/styles/maincontent.css">
+    <link rel="stylesheet" href="./src/styles/media-queries.css"> <!-- sempre por último>
+
+    <!-- Links para trazer os ícones via CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+</head>
+<body>
+    <div class="barraLateral">
+        <nav class="barraLateral-navegação">
+            <div class="logo">
+                <a href="">
+                    <img src="./src/assets/logo.png" alt="Uma imagem com fundo em gradiente do azul para o amarelo e com uma nota musical em branco">
+                </a> 
+            </div>
+            <div class="barraLateral-botão">
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home"></span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-search"></span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="biblioteca">
+            <div class="biblioteca-conteudo">
+                <button class="biblioteca-botao">
+                    <span class="fas fa-book"></span>
+                    <span>Sua Biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>   
+            </div>
+            <section class="playlist">
+                <div class="playlist-conteudo">
+                    <span class="text title">Crie uma playlist incrível!</span>
+                    <span class="text subtitle">Não se preocupe, vamos te ajudar!</span>
+                </div>
+                <button class="playlist-botao">Criar playlist</button>
+            </section>
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+            <div class="languages">
+                <button class="languages-button">
+                    <span class="fa fa-globe"></span>
+                    <span>Brasileiro</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<main>
+    <div class="main-container">
+        <nav class="header-navigation">
+            <div class="navigation">
+                <button class="arrow-left">
+                    <img src="./src/assets/small-left.png" alt="Seta apontando para a esquerda">
+                </button>
+                <button class="arrow-right">
+                    <img src="./src/assets/small-right.png" alt="Seta apontando para a direita">
+                </button>
+            </div>
+            <div class="header-search">
+                <img src="./src/assets/search.png" alt="">
+                <input id="search-input" type="text" maxlength="800" placeholder="Qual é sua vibe hoje?">
+            </div>
+            <div class="header-login">
+                <button class="subscribe">Faça parte</button>
+                <button class="login">Entrar</button>
+            </div>
+        </nav>
+        <nav class="principal__content">
+            <div class="principal__content__texts">
+                <p class="principal__content__texts__title" id="saudacao"></p>
+                <script>
+                    function definirSaudacao() {
+                        const agora = new Date();
+                        const hora = agora.getHours();
+                        let saudacao = "";
+                        if (hora >= 6 && hora < 12) {
+                            saudacao = "Bom dia!";
+                        } else if (hora >= 12 && hora < 18) {
+                            saudacao = "Boa tarde!";
+                        } else {
+                            saudacao = "Boa noite!";
+                        }
+                        document.getElementById("saudacao").textContent = saudacao;
+                    }
+                    definirSaudacao();
+                </script>
+                <p class="principal__content__texts__subtitle">Encontre sua vibe!</p>
+            </div>
+                    <!-- LIST DE CARDS -->
+            <div class="offer__scroll-container">
+                <div class="offer__list">
+                    <section class="offer__list-item">
+                        <!-- CARD 1 -->
+                        <a href="" class="cards">
+                            <div class="cards card1">
+                                <img src="./src/assets/playlist/1.png" alt="" />
+                                <span>Boas festas</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 2 -->
+                        <a href="" class="cards">
+                            <div class="cards card2">
+                                <img src="./src/assets/playlist/2.png" alt="" />
+                                <span>Feitos para você</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 3 -->
+                        <a href="" class="cards">
+                            <div class="cards card3">
+                                <img src="./src/assets/playlist/3.png" alt="" />
+                                <span>Lançamentos</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 4 -->
+                        <a href="" class="cards">
+                            <div class="cards card4">
+                                <img src="./src/assets/playlist/4.png" alt="" />
+                                <span>Creators</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 5 -->
+                        <a href="" class="cards">
+                            <div class="cards card5">
+                                <img src="./src/assets/playlist/5.png" alt="" />
+                                <span>Para treinar</span>
+                            </div>
+                        </a>
+
+                       <!-- CARD 6 -->
+                        <a href="" class="cards">
+                            <div class="cards card6">
+                                <img src="./src/assets/playlist/6.png" alt="" />
+                                <span>Podcasts</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 7 -->
+                        <a href="" class="cards">
+                            <div class="cards card7">
+                               <img src="./src/assets/playlist/7.png" alt="" />
+                               <span>Sertanejo</span>
+                            </div>
+                       </a>
+
+                        <!-- CARD 8 -->
+                        <a href="" class="cards">
+                            <div class="cards card8">
+                                <img src="./src/assets/playlist/8.png" alt="" />
+                                <span>Samba e pagode</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 9 -->
+                        <a href="" class="cards">
+                            <div class="cards card9">
+                                <img src="./src/assets/playlist/9.png" alt="" />
+                                <span>Funk</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 10 -->
+                        <a href="" class="cards">
+                            <div class="cards card10">
+                                <img src="./src/assets/playlist/10.png" alt="" />
+                                <span>MPB</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 11 -->
+                        <a href="" class="cards">
+                            <div class="cards card11">
+                                <img src="./src/assets/playlist/11.png" alt="" />
+                                <span>Rock</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 12 -->
+                        <a href="" class="cards">
+                            <div class="cards card12">
+                                <img src="./src/assets/playlist/12.png" alt="" />
+                                <span>Hip Hop</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 13 -->
+                        <a href="" class="cards">
+                            <div class="cards card13">
+                                <img src="./src/assets/playlist/13.png" alt="" />
+                                <span>Indie</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 14 -->
+                        <a href="" class="cards">
+                            <div class="cards card14">
+                                <img src="./src/assets/playlist/14.png" alt="" />
+                                <span>Relax</span>
+                            </div>
+                        </a>
+
+                        <!-- CARD 15 -->
+                        <a href="" class="cards">
+                            <div class="cards card15">
+                                <img src="./src/assets/playlist/15.png" alt="" />
+                                <span>Música Latina</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+            </div>           
+        </nav>
+    </div>
+</main>
+<footer class="rodapé-premium">
+    <div class="text">
+        <p class="premium-title">Teste nossa versão premium <strong>graça!</strong></p>
+        <p class="premium-subtitle">Para curtir sua música com mais tranquilidade!</p>
+    </div>
+    <div class="button">
+        <button type="button">Teste o premium!</button>
+    </div>
+</footer>
+</html>

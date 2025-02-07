@@ -1,0 +1,42 @@
+1. É importante desenvolver as partes de uma página, separando-as e testando a cada progresso;
+
+2. A tag <nav></nav> é usada para fazer menus;
+
+3. Ao colocar uma imagem que está em outra pasta colocar no src ="./nomedapasta/arquivo.png";
+
+4. Use o div para separar as coisas
+
+5. Tem como usar imagens de bibliotecas virtuais, para usar o font awesome coloque no head os códigos:
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Imersão</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Links para trazer os ícones via CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+
+  E depois no body span class="códigoDoAwesome";
+
+6. No CSS, o position é em relação a posição daquela classe e pode ser fixa ou relativa, top, left e right a posição em relação a cada 
+uma destas, ou seja, topo, esquerda e direita (totaltemente em uma das posições use o 0) e o width em relação a largura.;
+
+7. No CSS, text-decoration: none e text-transform: none deixam o botão "livre", sem cara de botão;
+
+8. Para colocar o footer no final da página e fixo:
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+9. O vars.css é usado para colocarmos algumas informações fixas no código, não precisando trocar sempre item por item.
+Para ser anexado no html usa-se o: <link rel="stylesheet" href="./src/styles/vars.css">, depois do reset e antes do barraLateral-rodapé.css;
+
+10. <input id="search-input" type="text" maxlength="800" placeholder="TEXTO"> (maxlength para limitar no número de caracter);
+
+11. é responsivo usar  max-width: 80vh e height: 100vh, com o vh como unidade de medida,  no margim usar o rem, 
+assim as coisas se ajustam independentemente do tamanho da tela;
+
+Usar o media-queries para ajustar a responsividade
