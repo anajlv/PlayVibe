@@ -32,4 +32,5 @@ O **PlayVibe** é uma simulação de uma interface de aplicativo de música, ins
 ## 📝 Licença
 Este projeto é open-source e foi desenvolvido para fins educacionais. Sinta-se à vontade para utilizá-lo como base para seus próprios projetos ou para estudar HTML e CSS.
 
+Você pode acessar a página do projeto pelo link: https://play-vibe.vercel.app.
 Desenvolvido com 💜 por Ana Júlia Veloso.
